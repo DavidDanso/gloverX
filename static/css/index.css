@@ -342,92 +342,6 @@ button:hover .button-text {
   margin-left: 5%;
 }
 /*********************************************** INFO *****************************************************/
-#info {
-  padding-top: 18%;
-}
-.info-intro {
-  margin: 2%;
-}
-.info-intro h1 {
-  font-size: 3vh;
-  font-family: var(--text-font);
-  letter-spacing: 1px;
-  color: var(--nav-links);
-  text-align: left;
-}
-h1.splitting {
-  color: var(--nav-links);
-}
-h1.splitting .char {
-  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  -webkit-transition-delay: calc(20ms * var(--char-index));
-  transition-delay: calc(20ms * var(--char-index));
-}
-h1.splitting[data-scroll="out"] .char {
-  opacity: 0.1;
-  -webkit-transform: translateY(0.25em);
-  transform: translateY(0.25em);
-}
-/*********************************************** Service *****************************************************/
-#service {
-  margin-top: 30%;
-}
-.service-intro {
-  margin: 2%;
-}
-.service-intro #roll {
-  width: 18%;
-  vertical-align: middle;
-}
-.service-intro #svg-img {
-  width: 5%;
-  vertical-align: middle;
-}
-.service-intro small {
-  font-size: 2vh;
-  color: var(--text-color);
-  letter-spacing: 2px;
-  font-family: var(--text-font);
-  vertical-align: middle;
-}
-.service-intro p {
-  font-size: 2.3vh;
-  color: var(--text-color);
-  letter-spacing: 2px;
-  font-family: var(--text-font);
-  line-height: 1.6;
-  margin-top: 10%;
-  margin-bottom: 8%;
-}
-#service-img {
-  margin-bottom: 8%;
-}
-.service-intro h6 {
-  font-size: 2.1vh;
-  font-family: var(--main-font);
-  letter-spacing: 2px;
-  color: var(--nav-links);
-  text-transform: uppercase;
-  line-height: 1.3;
-  margin-top: 5%;
-}
-.service-intro hr {
-  background: var(--paragraph-color);
-}
-.service-intro #last-line {
-  margin-bottom: 20%;
-}
-.service-intro button small {
-  vertical-align: middle !important;
-  color: var(--text-color);
-  font-size: 18px;
-  font-family: var(--text-font) !important;
-  font-weight: 200;
-  letter-spacing: 1px;
-}
 
 /******************************************* Footer ***************************************/
 footer p {
@@ -452,8 +366,8 @@ footer p {
     margin-bottom: 3px;
   }
   #mainNav.navbar-shrink {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   footer p {
     margin-top: -3%;
@@ -476,9 +390,10 @@ footer p {
 
 /************************ Extra large devices (large desktops, 1200px and up) ********************************/
 @media (min-width: 1200px) {
+  /* navbar */
   #mainNav {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     background: transparent;
   }
   .nav-item a {
@@ -492,13 +407,15 @@ footer p {
     margin-left: -20%;
   }
   #mainNav.navbar-shrink {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   #mainNav.navbar-shrink .nav-item a {
     font-size: 1.8vh;
     margin-left: 0%;
   }
+
+  /* hero */
   #hero {
     padding-top: 0%;
   }
@@ -552,186 +469,6 @@ footer p {
     line-height: 1.2;
     font-size: 2.2vh;
     margin-top: -0.5%;
-  }
-  #info {
-    padding-top: 8%;
-  }
-  .info-intro h1 {
-    font-size: 4vh;
-    text-align: center;
-  }
-  #service {
-    margin-top: 16%;
-  }
-  .service-intro #roll {
-    width: 6%;
-  }
-  .service-intro #service-img img {
-    width: 60%;
-    object-fit: contain;
-    margin-left: 30%;
-    margin-bottom: -20%;
-  }
-  .service-intro small {
-    font-size: 2.2vh;
-  }
-  .service-intro p {
-    font-size: 3vh;
-    margin-top: 15%;
-  }
-  .service-intro #svg-img {
-    width: 5%;
-  }
-  .service-intro h6 {
-    font-size: 2.1vh;
-    margin-top: 5%;
-    text-align: center;
-  }
-  .service-intro .col-md-4 {
-    margin-bottom: 5%;
-  }
-  .service-intro .row {
-    margin-bottom: 2%;
-  }
-  #last-line {
-    display: none;
-  }
-  #image {
-    margin-top: 8%;
-  }
-  #image img {
-    width: 100%;
-    height: auto;
-  }
-  #works {
-    margin-top: 8%;
-  }
-  .works-intro {
-    margin: 4%;
-  }
-  .works-intro h1 {
-    font-size: 5vh;
-  }
-  .works-intro #project_line {
-    width: 5%;
-    margin-top: 0%;
-    margin-bottom: 2%;
-  }
-  #works .img {
-    position: relative;
-    overflow: hidden;
-  }
-  #works .img img {
-    width: 100%;
-    height: auto;
-    transition: all 1.5s ease-in-out;
-  }
-  #works .img:hover img {
-    transform: scale(1.1);
-  }
-  .works-intro h2 {
-    font-size: 4vh;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-bottom: 4%;
-  }
-  .works-intro a {
-    letter-spacing: 1px;
-    margin-left: 10%;
-  }
-  button.portfolio_link {
-    width: 18rem;
-  }
-  button.portfolio_link .button-text {
-    line-height: 1.2;
-    font-size: 2.2vh;
-    margin-top: -1%;
-  }
-  .works-intro .number {
-    /*
-      width: 120px;
-      height: 120px;
-      padding: 4%;
-  */
-    background: transparent;
-    box-shadow: none;
-    margin-top: 20%;
-    margin-left: 75%;
-  }
-  .works-intro h6 {
-    font-size: 16vh;
-  }
-  .works-intro hr {
-    margin-top: 10%;
-    margin-bottom: 8%;
-  }
-  #private h3 {
-    font-size: 5vh;
-    margin-top: 8%;
-    margin-bottom: 10%;
-  }
-  #private .number {
-    display: none;
-  }
-  #private .number_two {
-    margin-top: 20%;
-    margin-left: 110%;
-  }
-  #private .col-md-4 {
-    margin-left: 15%;
-  }
-  #private h2 {
-    font-size: 4vh;
-    margin-top: 5%;
-    margin-left: 1%;
-    margin-bottom: 5%;
-  }
-  #private a {
-    margin-left: -1%;
-  }
-  #contact-msg {
-    margin-top: 6%;
-  }
-  .contact-intro h1 {
-    font-size: 8vh;
-    margin-top: 10%;
-    margin-bottom: 6%;
-  }
-  #contact-txt {
-    margin-bottom: 5%;
-  }
-  .contact-intro h4 {
-    font-size: 2.2vh;
-    margin-bottom: 5%;
-  }
-  #contact-img {
-    width: 8%;
-    margin-right: 4%;
-    margin-bottom: 0%;
-  }
-  #scrollBack {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  #scrollBack a {
-    padding: 5%;
-    margin-left: 90%;
-    margin-top: 10%;
-  }
-  #scroll_circle {
-    width: 5%;
-    margin-bottom: 0%;
-  }
-  #svg_arrow {
-    width: 3%;
-    margin-left: 96%;
-    margin-top: -6.5%;
-  }
-  footer p {
-    font-size: 1.7vh;
-    margin-bottom: 1%;
-    margin-top: -3%;
-    padding-bottom: 1%;
   }
 }
 
