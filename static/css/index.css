@@ -342,7 +342,44 @@ button:hover .button-text {
   margin-left: 5%;
 }
 /*********************************************** INFO *****************************************************/
-
+#info {
+  margin-top: 16%;
+}
+.info-intro {
+  margin: 3%;
+}
+#info h2 {
+  font-size: 2.6vh;
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 2%;
+}
+#info p {
+  font-size: 2.2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+/*  */
+#info .row {
+  margin-top: 5%;
+}
+#info h6 {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 3%;
+}
+.info-box h3 {
+  font-size: 2.6vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 3%;
+}
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -469,6 +506,42 @@ footer p {
     line-height: 1.2;
     font-size: 2.2vh;
     margin-top: -0.5%;
+  }
+
+  /* info */
+  #info {
+    margin-top: 5%;
+  }
+  .info-intro {
+    margin: 3%;
+  }
+  #info h2 {
+    font-size: 2.7vh;
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+  }
+  #info p {
+    font-size: 2.3vh;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+  /*  */
+  #info .row {
+    margin-top: 5%;
+  }
+  #info #review_txt {
+    margin-right: 1%;
+    border-right: 1px solid var(--text-color);
+  }
+  #info h6 {
+    font-size: 2.2vh;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+  }
+  .info-box h3 {
+    font-size: 3vh;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
   }
 }
 
