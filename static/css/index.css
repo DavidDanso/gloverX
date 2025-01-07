@@ -182,8 +182,8 @@ button:hover .button-text {
 #mainNav {
   transform: translateY(0);
   transition: padding-top 0.3s, padding-bottom 0.3s;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   background: transparent;
   transform: translateY(0);
   opacity: 1;
@@ -191,7 +191,7 @@ button:hover .button-text {
   background: var(--bg-color);
 }
 .navbar-brand img {
-  width: 95px;
+  width: 65px;
 }
 .navbar-brand {
   margin-right: 0;
@@ -268,6 +268,9 @@ button:hover .button-text {
     -webkit-transform: none;
     -o-transform: none;
   }
+}
+#track_shipment_btn {
+  list-style: none;
 }
 
 /*********************************************** HERO *****************************************************/
@@ -425,181 +428,7 @@ h1.splitting[data-scroll="out"] .char {
   font-weight: 200;
   letter-spacing: 1px;
 }
-/*********************************************** Image *****************************************************/
-#image {
-  margin-top: 10%;
-}
-/*********************************************** Works *****************************************************/
-#works {
-  margin-top: 15%;
-}
-.works-intro {
-  margin: 2%;
-}
-.works-intro h1 {
-  font-size: 3.5vh;
-  font-family: var(--main-font);
-  letter-spacing: 1px;
-  color: var(--nav-links);
-  text-align: center;
-}
-.works-intro #project_line {
-  width: 10%;
-  margin-top: 5%;
-  margin-bottom: 8%;
-}
-.works-intro h2 {
-  font-size: 3vh;
-  font-family: var(--main-font);
-  letter-spacing: 1px;
-  margin-top: 8%;
-  color: var(--text-color);
-  margin-bottom: 8%;
-}
-.works-intro a {
-  margin-left: -1%;
-}
-.works-intro button small {
-  font-size: 18px;
-  font-family: var(--text-font) !important;
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-.works-intro #color {
-  width: 50px;
-}
-.works-intro .number {
-  background: #fff;
-  width: 70px;
-  height: 70px;
-  padding: 5%;
-  border-radius: 100%;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
-  margin-left: 70%;
-  margin-top: 5%;
-}
-.works-intro h6 {
-  font-family: var(--number-font);
-  font-size: 4vh;
-  color: var(--text-color);
-  text-align: center;
-}
 
-.works-intro hr {
-  background: var(--paragraph-color);
-  margin-top: 20%;
-  margin-bottom: 15%;
-}
-#private h3 {
-  font-size: 3.5vh;
-  font-family: var(--main-font);
-  letter-spacing: 1px;
-  margin-top: 8%;
-  color: var(--title-color);
-  margin-bottom: 10%;
-}
-#private .number {
-  background: #fff;
-  width: 70px;
-  height: 70px;
-  padding: 5%;
-  border-radius: 100%;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
-  margin-left: 50%;
-  margin-top: 5%;
-}
-#private h2 {
-  font-size: 3.5vh;
-  font-family: var(--main-font);
-  letter-spacing: 1px;
-  margin-top: 8%;
-  color: var(--text-color);
-  margin-bottom: 10%;
-}
-#private a {
-  margin-left: -1%;
-}
-#private button.portfolio_link {
-  width: 18rem;
-}
-#private button.portfolio_link .button-text {
-  line-height: 1.2;
-  font-size: 2.2vh;
-  margin-top: -1%;
-}
-/******************************************** Contact-Msg **************************************************/
-#contact-msg {
-  margin-top: 15%;
-  background: var(--title-color);
-}
-.contact-intro {
-  margin: 3%;
-}
-.contact-intro h1 {
-  font-size: 5vh;
-  font-family: var(--main-font);
-  letter-spacing: 2px;
-  color: var(--bg-color);
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-#contact-txt {
-  margin-bottom: 15%;
-}
-.contact-intro h4 {
-  font-size: 2.2vh;
-  font-family: var(--main-font);
-  letter-spacing: 2px;
-  color: var(--bg-color);
-  margin-bottom: 5%;
-}
-#contact-img {
-  width: 8%;
-  margin-right: 4%;
-  transition: 1s;
-  margin-bottom: 15%;
-}
-#contact-img:hover {
-  transform: rotate(-15deg);
-  transition: 1s;
-}
-.contact-intro h1.splitting {
-  color: var(--bg-color);
-}
-.contact-intro h1.splitting .char {
-  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  -webkit-transition-delay: calc(20ms * var(--char-index));
-  transition-delay: calc(20ms * var(--char-index));
-}
-.contact-introh1.splitting[data-scroll="out"] .char {
-  opacity: 0.1;
-  -webkit-transform: translateY(0.25em);
-  transform: translateY(0.25em);
-}
-#scrollBack {
-  margin-top: 20%;
-  margin-bottom: 10%;
-}
-#scrollBack a {
-  padding: 5%;
-  margin-left: 70%;
-  margin-top: 20%;
-}
-#scroll_circle {
-  width: 20%;
-  margin-bottom: 10%;
-}
-#svg_arrow {
-  width: 8%;
-  transform: rotate(-90deg);
-  z-index: 1;
-  position: relative;
-  margin-left: -15%;
-  margin-top: -10%;
-}
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -615,33 +444,16 @@ footer p {
   #mainNav {
     border-bottom: 1px solid var(--line-color);
   }
-  #contact {
-    padding: 7px 10px !important;
-    font-size: 14px;
-    background: transparent;
-    border: 1px solid var(--link-color);
-    border-radius: 100px;
-    transition: 0.4s ease-in-out;
-    width: 30%;
-    text-align: center;
-    margin-left: -3px;
+  .navbar-brand img {
+    width: 65px;
+    margin-top: -20%;
+  }
+  #track_shipment {
+    margin-bottom: 3px;
   }
   #mainNav.navbar-shrink {
     padding-top: 8px;
     padding-bottom: 8px;
-  }
-  .service-intro #color {
-    width: 50px;
-    margin-top: 1%;
-  }
-  #private .number_two {
-    display: none;
-  }
-  .contact-intro h1 {
-    margin-left: 4%;
-  }
-  #contact-icons {
-    margin-left: 4%;
   }
   footer p {
     margin-top: -3%;
