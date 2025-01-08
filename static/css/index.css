@@ -353,7 +353,7 @@ button:hover .button-text {
 }
 #info h2 {
   font-size: 2.6vh;
-  font-family: var(--header-font);
+  font-family: var(--main-font);
   letter-spacing: 1px;
   color: var(--title-color);
   margin-bottom: 2%;
@@ -453,7 +453,7 @@ button:hover .button-text {
   margin: 2%;
 }
 #clients h1 {
-  font-size: 4.5vh;
+  font-size: 3vh;
   font-family: var(--main-font);
   letter-spacing: 1px;
   color: var(--title-color);
@@ -495,6 +495,36 @@ button:hover .button-text {
   margin-bottom: 20%;
 }
 
+/*********************************************** Testimonial *****************************************************/
+#testimonial {
+  margin-top: 15%;
+}
+.testimonial-intro {
+  margin: 3%;
+}
+#testimonial h1 {
+  font-size: 2.8vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 3px;
+}
+#testimonial .card {
+  border: none;
+  background-color: #d9eafd;
+  margin-bottom: 3%;
+}
+#testimonial #quote_img {
+  width: 15%;
+  margin-bottom: 10%;
+}
+#testimonial p {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  line-height: 1.4;
+}
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -712,7 +742,7 @@ footer p {
     margin-left: 70%;
   }
   #clients h1 {
-    font-size: 4.5vh;
+    font-size: 3.2vh;
     margin-bottom: 3%;
   }
   #clients h6 {
@@ -724,6 +754,32 @@ footer p {
     width: 45%;
     height: auto;
     margin: 0 auto;
+  }
+
+  /* testimonial */
+  #testimonial {
+    margin-top: 6%;
+  }
+  .testimonial-intro {
+    margin: 3%;
+  }
+  #testimonial h1 {
+    font-size: 3.2vh;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  #testimonial .card {
+    margin-bottom: 1%;
+  }
+  #testimonial #quote_img {
+    width: 40px;
+    margin-bottom: 25px;
+  }
+  #testimonial p {
+    font-size: 2.2vh;
+    line-height: 1.4;
+    margin-bottom: 2px;
   }
 }
 
