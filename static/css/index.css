@@ -444,6 +444,57 @@ button:hover .button-text {
 #mission_vision img {
   width: 45px;
 }
+
+/******************************************** Clients **************************************************/
+#clients {
+  margin-top: 15%;
+}
+#clients .txt {
+  margin: 2%;
+}
+#clients h1 {
+  font-size: 4.5vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 3%;
+}
+#clients h6 {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 12%;
+  line-height: 1.4;
+}
+#clients h6 span {
+  border-bottom: 1px solid var(--text-color);
+}
+#clients #clients-slider img {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+  /*    margin-bottom: 20%;*/
+  opacity: 0.85; /* Set opacity to 85% */
+}
+#clients #clients-slider img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+.owl-carousel .owl-dots.disabled {
+  display: inline-block;
+  margin-bottom: 20%;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot.active:hover span {
+  background: #335fd4 !important;
+  margin-bottom: 20%;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #31323d !important;
+  margin-bottom: 20%;
+}
+
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -650,6 +701,29 @@ footer p {
   }
   #mission_vision img {
     width: 50px;
+  }
+
+  /* clients */
+  #clients {
+    margin-top: 5%;
+  }
+  #clients .txt {
+    margin: 2%;
+    margin-left: 70%;
+  }
+  #clients h1 {
+    font-size: 4.5vh;
+    margin-bottom: 3%;
+  }
+  #clients h6 {
+    font-size: 2vh;
+    margin-bottom: 17%;
+    line-height: 1.4;
+  }
+  #clients #clients-slider img {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
