@@ -525,6 +525,42 @@ button:hover .button-text {
   color: var(--text-color);
   line-height: 1.4;
 }
+
+/******************************************* Services ***************************************/
+#services {
+  margin-top: 15%;
+}
+.service-intro {
+  margin: 3%;
+}
+#services h1 {
+  font-size: 2.8vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 3px;
+  text-align: center;
+}
+#services .card {
+  border: none;
+  background: transparent;
+  margin-bottom: 4%;
+}
+#services .card #serv_img {
+  border-radius: 5px;
+  opacity: 0.85; /* Set opacity to 85% */
+}
+#services h5 {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  text-align: center;
+}
+#services #line_ {
+  width: 15%;
+}
+
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -551,6 +587,25 @@ footer p {
     padding-top: 3px;
     padding-bottom: 3px;
   }
+
+  /* services */
+  #services a {
+    margin-left: 5%;
+  }
+  #services .learn-more {
+    margin-top: 5%;
+  }
+  #services button.learn-more .button-text {
+    top: 0;
+    left: 10% !important;
+    right: 0;
+    bottom: 0;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 2vh !important;
+    margin-top: -3% !important;
+  }
+
   footer p {
     margin-top: -3%;
     margin-bottom: 3%;
@@ -780,6 +835,39 @@ footer p {
     font-size: 2.2vh;
     line-height: 1.4;
     margin-bottom: 2px;
+  }
+
+  /* services */
+  #services {
+    margin-top: 7%;
+  }
+  .service-intro {
+    margin: 3%;
+  }
+  #services h1 {
+    font-size: 3.2vh;
+    margin-bottom: 12px;
+  }
+  #services .card {
+    margin-bottom: 2%;
+  }
+  #services h5 {
+    font-size: 2.2vh;
+  }
+  #services #line_ {
+    width: 15%;
+  }
+  #services a {
+    margin-left: 0%;
+  }
+  #services .learn-more {
+    margin-top: 4%;
+  }
+  #services button.learn-more .button-text {
+    top: 0;
+    left: -5% !important;
+    font-size: 2.1vh !important;
+    margin-top: -1% !important;
   }
 }
 
