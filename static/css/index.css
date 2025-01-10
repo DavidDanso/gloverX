@@ -561,6 +561,66 @@ button:hover .button-text {
   width: 15%;
 }
 
+/******************************************* Tracking ***************************************/
+#tracking {
+  margin-top: 15%;
+}
+.tracking-intro {
+  margin: 3%;
+  background-color: #d9eafd;
+  border-radius: 6px;
+}
+#tracking .row {
+  padding: 3%;
+}
+#tracking h1 {
+  font-size: 2.6vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+#tracking .card {
+  border-radius: 6px;
+  background-color: #fafafa;
+  border: none;
+}
+#tracking h3 {
+  font-size: 2.1vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#tracking p {
+  font-size: 2vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+#tracking .input {
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-size: 2vh;
+  border: none;
+  background: #a1a1a16e;
+}
+#tracking .input:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+  border: none;
+  color: var(--text-color);
+  background: #a1a1a16e;
+}
+#tracking .input::placeholder {
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-size: 1.7vh;
+}
+
 /******************************************* Footer ***************************************/
 footer p {
   margin-top: 2%;
@@ -739,7 +799,7 @@ footer p {
     margin-bottom: 3%;
   }
   .info-box h3 {
-    font-size: 3vh;
+    font-size: 3.5vh;
     letter-spacing: 1px;
     margin-bottom: 3%;
   }
@@ -868,6 +928,43 @@ footer p {
     left: -5% !important;
     font-size: 2.1vh !important;
     margin-top: -1% !important;
+  }
+
+  /* tracking */
+  #tracking {
+    margin-top: 5%;
+  }
+  .tracking-intro {
+    margin: 3%;
+    background-color: #d9eafd;
+    border-radius: 6px;
+  }
+  #tracking .row {
+    padding: 3%;
+  }
+  #tracking h1 {
+    font-size: 4vh;
+    margin-bottom: 1px;
+  }
+  #tracking h1 span {
+    display: block;
+  }
+  #tracking .card {
+    border-radius: 6px;
+  }
+  #tracking h3 {
+    font-size: 2.1vh;
+    margin-bottom: 10px;
+  }
+  #tracking p {
+    font-size: 2.2vh;
+  }
+  #tracking .input {
+    font-size: 2vh;
+    margin-bottom: 5%;
+  }
+  #tracking .input::placeholder {
+    font-size: 1.9vh;
   }
 }
 
