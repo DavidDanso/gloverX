@@ -606,19 +606,20 @@ button:hover .button-text {
   font-family: var(--text-font);
   font-size: 2vh;
   border: none;
-  background: #a1a1a16e;
+  background: #a1a1a149;
 }
 #tracking .input:focus {
   box-shadow: none !important;
   outline: 0px !important;
   border: none;
   color: var(--text-color);
-  background: #a1a1a16e;
+  background: #a1a1a149;
 }
 #tracking .input::placeholder {
   letter-spacing: 1px;
   font-family: var(--text-font);
   font-size: 1.7vh;
+  color: #a1a1a1;
 }
 
 /******************************************* Footer ***************************************/
