@@ -256,7 +256,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img src="{% static 'images/quotes.png' %}" id="quote_img" class="img-fluid" alt="quote_img" />
-                      <p>ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                      <p class="reveal-text">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -268,7 +268,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img src="{% static 'images/quotes.png' %}" id="quote_img" class="img-fluid" alt="quote_img" />
-                      <p>ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                      <p class="reveal-text">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -283,7 +283,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img src="{% static 'images/quotes.png' %}" id="quote_img" class="img-fluid" alt="quote_img" />
-                      <p>ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                      <p class="reveal-text">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -311,9 +311,9 @@
                   <div class="card">
                     <img src="{% static 'images/serv_one.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
                     <div class="card-body">
-                      <h5 class="card-title">
+                      <h5 class="card-title reveal-text">
                         Freight Management
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid" alt="line_" />
+                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
                       </h5>
                     </div>
                     <!-- end card-body -->
@@ -326,9 +326,9 @@
                   <div class="card">
                     <img src="{% static 'images/serv_two.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
                     <div class="card-body">
-                      <h5 class="card-title">
+                      <h5 class="card-title reveal-text">
                         Clearance and Duty Assistance
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid" alt="line_" />
+                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
                       </h5>
                     </div>
                     <!-- end card-body -->
@@ -341,9 +341,9 @@
                   <div class="card">
                     <img src="{% static 'images/serv_three.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
                     <div class="card-body">
-                      <h5 class="card-title">
+                      <h5 class="card-title reveal-text">
                         Export Facilitation
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid" alt="line_" />
+                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
                       </h5>
                     </div>
                     <!-- end card-body -->
@@ -423,6 +423,49 @@
           <!-- End container-fluid -->
         </div>
         <!-- End message -->
+
+        <!--============================================ Footer-Section ================================-->
+        <footer>
+          <div class="container-fluid">
+            <div class="footer-intro">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row footer-content">
+                    <div class="col-md-8">
+                      <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
+                      <a href="/contact"><span>Contact Us</span></a>
+                      <a href="/track"><span>Track Shipment</span></a>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-md-4 social-links align-self-center">
+                      <a href="#" aria-label="Twitter">
+                        <img src="{% static 'images/x.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
+                      </a>
+                      <a href="#" aria-label="Instagram">
+                        <img src="{% static 'images/ig.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
+                      </a>
+                    </div>
+                    <!-- end social-links -->
+                  </div>
+                  <!-- end footer-content -->
+                </div>
+                <!-- end card-body -->
+              </div>
+              <!-- end card -->
+
+              <!--  -->
+              <div class="footer-sub">
+                <p>&copy; 2025 Gloverx. All rights reserved.</p>
+              </div>
+              <!-- end footer-sub -->
+              <!--  -->
+            </div>
+            <!-- end footer-intro -->
+          </div>
+          <!-- end container -->
+        </footer>
+        <!-- end footer -->
         <!--  -->
         <div class="cursor">
           <div class="cursor__inner cursor__inner--circle"></div>
@@ -450,6 +493,6 @@
     <script src="{% static 'js/vendor/charming.min.js' %}"></script>
     <script src="{% static 'js/vendor/TweenMax.min.js' %}"></script>
     <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-    <!-- <script src="{% static 'js/main.js' %}"></script> -->
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

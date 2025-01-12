@@ -239,11 +239,13 @@ button:hover .button-text {
   color: var(--text-color);
   letter-spacing: 1px;
   font-family: var(--text-font);
+  transition: all 0.5s ease-in-out;
   text-transform: uppercase;
   margin-left: -2%;
 }
 .nav-item a:hover {
   color: var(--nav-hover);
+  transition: all 0.5s ease-in-out;
 }
 #mainNav.navbar-shrink {
   padding-top: 15px;
@@ -667,14 +669,60 @@ button:hover .button-text {
 }
 
 /******************************************* Footer ***************************************/
-footer p {
-  margin-top: 2%;
-  text-align: center;
-  color: var(--title-color);
-  font-size: 1.7vh;
-  letter-spacing: 2px;
-  margin-bottom: 3%;
+footer {
+  margin-top: 12%;
+}
+.footer-intro {
+  margin: 3%;
+}
+.footer-intro .card {
+  background: #fff;
+  border: 1px solid #a1a1a136;
+  border-radius: 6px;
+}
+#footer_logo {
+  max-width: 60px;
+  height: auto;
+  margin-right: 4%;
+}
+.footer-content a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 2vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
   font-family: var(--text-font);
+  margin-left: 1%;
+}
+.footer-content a span {
+  border-bottom: 1px solid #a1a1a17b;
+}
+.footer-content a:hover,
+a span:hover {
+  transition: all 0.5s ease-in-out;
+  color: var(--nav-hover);
+  border-bottom: none;
+}
+#footer_icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+#footer_icon:hover {
+  opacity: 0.7;
+}
+.footer-sub p {
+  color: #6c757d;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  padding-bottom: 4%;
 }
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
 @media (max-width: 575.98px) {
@@ -1032,6 +1080,39 @@ footer p {
   }
   .message-intro #roll {
     width: 3%;
+  }
+
+  /* footer */
+  footer {
+    margin-top: 6%;
+  }
+  .footer-intro {
+    margin: 3%;
+  }
+  .footer-intro .card {
+    margin: 1%;
+  }
+  #footer_logo {
+    max-width: 55px;
+    margin-right: 3%;
+  }
+  .footer-content a {
+    font-size: 2vh;
+  }
+  #footer_icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 3%;
+    float: right;
+    margin-right: 4%;
+  }
+  .footer-sub p {
+    font-size: 1.8vh;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
   }
 }
 
