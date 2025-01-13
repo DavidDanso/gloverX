@@ -65,7 +65,7 @@
         <div id="hero">
           <div class="container-fluidd">
             <div class="hero-intro">
-              <img id="show_img" src="{% static 'images/hero_banner.avif' %}" class="img-fluid" alt="active_img" />
+              <img id="show_img" src="{% static 'images/v.avif' %}" class="img-fluid" alt="active_img" />
 
               <div id="style_container">
                 <div class="wrapper">
@@ -121,7 +121,7 @@
                         real-time tracking
                       </h6>
                       <div class="info-box">
-                        <h3>99%</h3>
+                        <div class="counter-value" data-count="99" data-symbol="%">0</div>
                       </div>
                       <!-- end info-box -->
                     </div>
@@ -133,7 +133,7 @@
                         on-time delivery
                       </h6>
                       <div class="info-box">
-                        <h3>99%</h3>
+                        <div class="counter-value" data-count="99" data-symbol="%">0</div>
                       </div>
                       <!-- end info-box -->
                     </div>
@@ -150,7 +150,7 @@
                         Countries Serviced
                       </h6>
                       <div class="info-box">
-                        <h3>3</h3>
+                        <div class="counter-value" data-count="3"><span>0</span></div>
                       </div>
                       <!-- end info-box -->
                     </div>
@@ -162,7 +162,7 @@
                         customers
                       </h6>
                       <div class="info-box">
-                        <h3>600+</h3>
+                        <div class="counter-value" data-count="600" data-symbol="+">0</div>
                       </div>
                       <!-- end info-box -->
                     </div>
@@ -228,7 +228,7 @@
         <div id="clients">
           <div class="container-fluid">
             <div class="txt">
-              <h1>Our Partners</h1>
+              <h1 class="reveal-text">Our Partners</h1>
               <h6>
                 <span>Our valued partners are integral to our success.</span>
               </h6>
@@ -309,12 +309,12 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="card">
-                    <img src="{% static 'images/serv_one.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    <div class="img">
+                      <img src="{% static 'images/serv_one.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    </div>
+                    <!-- end img -->
                     <div class="card-body">
-                      <h5 class="card-title reveal-text">
-                        Freight Management
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
-                      </h5>
+                      <h5 class="card-title reveal-text">Freight Management</h5>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -324,12 +324,12 @@
 
                 <div class="col-md-4">
                   <div class="card">
-                    <img src="{% static 'images/serv_two.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    <div class="img">
+                      <img src="{% static 'images/serv_two.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    </div>
+                    <!-- end img -->
                     <div class="card-body">
-                      <h5 class="card-title reveal-text">
-                        Clearance and Duty Assistance
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
-                      </h5>
+                      <h5 class="card-title reveal-text">Clearance and Duty Assistance</h5>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -339,12 +339,12 @@
 
                 <div class="col-md-4">
                   <div class="card">
-                    <img src="{% static 'images/serv_three.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    <div class="img">
+                      <img src="{% static 'images/serv_three.avif' %}" id="serv_img" class="img-fluid card-img-top" alt="serv_img" />
+                    </div>
+                    <!-- end img -->
                     <div class="card-body">
-                      <h5 class="card-title reveal-text">
-                        Export Facilitation
-                        <img src="{% static 'images/line.png' %}" id="line_" class="img-fluid reveal-text" alt="line_" />
-                      </h5>
+                      <h5 class="card-title reveal-text">Export Facilitation</h5>
                     </div>
                     <!-- end card-body -->
                   </div>
@@ -379,14 +379,16 @@
             <div class="tracking-intro">
               <div class="row">
                 <div class="col-md-8 align-self-center">
-                  <h1>Moving You Across Borders: <span></span> International Transport & Logistics Services</h1>
+                  <h2 class="reveal-text">
+                    Moving You Across Borders: <br />
+                    International Transport & Logistics Services
+                  </h2>
                 </div>
                 <!-- end col -->
 
                 <div class="col-md-4">
                   <div class="card">
                     <div class="card-body">
-                      <h3>Start Tracking Now</h3>
                       <p>See where your shipment is. enter your tracking number and click “Tracking Shipment”</p>
                       <form action="">
                         <input type="text" class="form-control input" placeholder="enter tracking number" />

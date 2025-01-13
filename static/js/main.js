@@ -15,6 +15,50 @@ textrev.from(".line span", 1.8, {
   },
 });
 
+//Couter Up Animation
+var config = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+};
+
+function callback(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      var $this = $(entry.target),
+        countTo = $this.attr("data-count"),
+        symbol = $this.attr("data-symbol") || "";
+
+      $this
+        .prop({
+          countNum: 0,
+        })
+        .animate(
+          {
+            countNum: countTo,
+          },
+          {
+            duration: 1000,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.floor(this.countNum) + symbol);
+            },
+            complete: function () {
+              var localNum = this.countNum.toLocaleString();
+              $this.text(localNum + symbol);
+            },
+          }
+        );
+      observer.unobserve(entry.target);
+    }
+  });
+}
+var observer = new IntersectionObserver(callback, config);
+var counters = document.querySelectorAll(".counter-value");
+counters.forEach((counter) => {
+  observer.observe(counter);
+});
+
 // owlCarousel
 $("#clients-slider").owlCarousel({
   margin: 25,
