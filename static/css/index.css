@@ -828,7 +828,7 @@ a span:hover {
     padding-top: 0%;
   }
   #hero #show_img {
-    height: 96vh;
+    height: 100vh;
   }
   #style_container {
     margin-top: -23%;
@@ -859,8 +859,8 @@ a span:hover {
   }
   #style_container p {
     font-size: 2.5vh;
-    line-height: 1.6;
-    margin-top: 5%;
+    line-height: 1.2;
+    margin-top: 3%;
     margin-left: 5%;
     margin-bottom: 5%;
   }
