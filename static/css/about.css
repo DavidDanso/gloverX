@@ -398,6 +398,15 @@ button:hover .button-text {
   margin-top: 10%;
 }
 
+/*********************************************** Info *****************************************************/
+#info {
+  margin-top: -5%;
+}
+#info #info_img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /******************************************* Footer ***************************************/
 footer {
   margin-top: 12%;
@@ -607,6 +616,11 @@ a span:hover {
   }
   .about-intro #last-row p {
     margin-left: 10%;
+  }
+
+  /* info */
+  #info {
+    margin-top: -6%;
   }
 
   /* footer */
