@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Delivering Smiles, One Package at a Time." />
+    <meta name="keywords" content="Gloverx Shipping Services" />
+    <meta name="author" content="the_desiinger" />
+    <link rel="icon" href="{% static 'images/gloverx.png' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <title>About | Gloverx Shipping Services</title>
+  </head>
+  <body data-scroll-one class="demo-1" id="pageTop">
+    <!--=============================================== Navigation ================================-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'images/gloverx.png' %}" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--  -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#pageTop">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <li class="nav-item" id="track_shipment_btn">
+            <a href="#" id="track_shipment">
+              <button class="button alternative">Track Shipment</button>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <main>
+      <div data-scroll-one class="page page--layout-2">
+        <!--====================================================== Img-Content ==========================================-->
+        <div class="content content--full content--alternate"></div>
+        <!-- End content -->
+        <!--=============================================== Hero-Section ================================-->
+        <div id="hero">
+          <div class="container-fluidd">
+            <div class="hero-intro"></div>
+            <!-- End hero-intro -->
+          </div>
+          <!-- End container-fluidd -->
+        </div>
+        <!-- End hero -->
+
+        <!--=============================================== Info-Section ================================-->
+
+        <!--============================================ Footer-Section ================================-->
+
+        <!-- end footer -->
+        <!--  -->
+        <div class="cursor">
+          <div class="cursor__inner cursor__inner--circle"></div>
+        </div>
+        <!-- End cursor -->
+      </div>
+      <!-- End page--layout-2 -->
+    </main>
+    <!--=============================================== JavaScript ===================================-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.js' %}"></script>
+    <script src="{% static 'js/jquery-min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- Custom Script -->
+    <script src="{% static 'js/scrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="{% static 'js/vendor/charming.min.js' %}"></script>
+    <script src="{% static 'js/vendor/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/about.js' %}"></script>
+  </body>
+</html>

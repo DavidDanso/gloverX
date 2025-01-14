@@ -5,3 +5,8 @@ from django.shortcuts import render
 def homePage(request):
     context = {}
     return render(request, 'site_pages/index.html', context)
+
+
+def aboutPage(request):
+    context = {}
+    return render(request, 'site_pages/about.html', context)

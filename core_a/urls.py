@@ -23,6 +23,7 @@ from site_pages.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homePage, name='home'),
+    path('about', aboutPage, name='about'),
 ]
 
 
