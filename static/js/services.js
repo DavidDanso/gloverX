@@ -210,18 +210,18 @@ window.addEventListener("load", function () {
 }
 
 $(document).ready(function () {
-  /********************************************** Navigation ********************************************/
-  //
-  $(".nav-link").click(function () {
-    $(".navbar-collapse").collapse("hide");
+  // Close mobile nav when clicking links
+  $(".nav-link, .navbar-brand, #track_shipment").click(function () {
+    $("#navbarSupportedContent").collapse("hide");
   });
-  //
+
+  // ScrollSpy
   $("body").scrollspy({
     target: "#mainNav",
     offset: 70,
   });
 
-  //
+  // Navbar shrink effect
   $(window).scroll(function () {
     var sc = $(window).scrollTop();
     if (sc > 0) {
