@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/services.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/%20base.css' %}" />
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
@@ -35,10 +37,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="active nav-link" href="{% url 'about' %}">About Us</a>
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pageTop">Our Services</a>
+              <a class="active nav-link" href="#pageTop">Our Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
@@ -61,13 +63,71 @@
         <!-- End content -->
         <!--=============================================== Hero-Section ================================-->
         <div id="hero">
-          <div class="container-fluidd">
-            <div class="hero-intro"></div>
+          <div class="container-fluid">
+            <div class="hero-intro">
+              <div class="wrapper">
+                <div class="line">
+                  <span>Delivering Reliable</span>
+                </div>
+                <!-- End line -->
+                <div class="line">
+                  <span>Shipping & Logistics</span>
+                </div>
+                <!-- End line -->
+                <div class="line">
+                  <span>Solutions.</span>
+                </div>
+                <!-- End line -->
+              </div>
+              <!-- End wrapper -->
+
+              <div id="hero_img" class="animate-this">
+                <img id="service_hero" src="{% static 'images/service_hero-img.avif' %}" class="img-fluid" alt="service_hero" />
+              </div>
+              <!-- End hero_img -->
+
+              <p class="animate-this">
+                <span>GLOVERX SHIPPING SERVICE</span>
+              </p>
+            </div>
             <!-- End hero-intro -->
           </div>
           <!-- End container-fluidd -->
         </div>
         <!-- End hero -->
+
+        <!--============================================ Image-Section ================================-->
+        <div id="info">
+          <div class="container-fluid">
+            <div class="info-intro">
+              <div class="row">
+                <div class="col-md-5">
+                  <h1>Expertise</h1>
+                  <h6>
+                    <span>What are we good at?</span>
+                  </h6>
+                </div>
+                <!-- End col-5 -->
+
+                <div class="col-md-7">
+                  <p class="reveal-text">
+                    We offer end-to-end shipping solutions that cover everything from freight management to customs brokerage. Our services are designed to ensure that your shipments are delivered on time, in full compliance with international regulations, and at the best possible cost. Our team of experts is dedicated to simplifying the logistics
+                    process for businesses of all sizes. With years of experience in the shipping industry, we have developed the knowledge and tools to handle all your shipping needs—from customs clearance to delivery at your door.
+                  </p>
+                  <p class="reveal-text">
+                    We help with customs clearance when your imported goods are held for duty payment. Being DHL, Aramex, UPS, FedEx, and others. We create state-to-state shipping labels and schedule pickups with DHL(three days shipment) at a cool price . Account options for pickups are also available. Additionally, we facilitate exports from Ghana
+                    to anywhere in the world with DHL.
+                  </p>
+                </div>
+                <!-- End col-7 -->
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End info-intro -->
+          </div>
+          <!-- End container-fluid -->
+        </div>
+        <!-- End info -->
 
         <!--============================================ Message-Section ================================-->
 

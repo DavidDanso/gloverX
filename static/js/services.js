@@ -59,6 +59,30 @@ tl.to("#hero", { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", duration:
 
 tl.from(".animate-this", { duration: 1, x: -30, opacity: 0, stagger: 1, delay: 0.3 });
 
+// owl-Carousel
+$("#clients-slider").owlCarousel({
+  margin: 25,
+  smartSpeed: 1000,
+  nav: false,
+  loop: true,
+  dots: true,
+  dotsEach: true,
+  autoplay: true,
+  mouseDrag: true,
+  touchDrag: true,
+  responsive: {
+    0: {
+      items: 2.6,
+    },
+    600: {
+      items: 4.6,
+    },
+    1000: {
+      items: 6.6,
+    },
+  },
+});
+
 //ScrollTriger
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
