@@ -391,7 +391,7 @@ button:hover .button-text {
   color: var(--text-color);
   letter-spacing: 1px;
   font-family: var(--text-font);
-  line-height: 1.3;
+  line-height: 1.2;
   margin-bottom: 2%;
 }
 .about-intro #last-row {
@@ -405,6 +405,76 @@ button:hover .button-text {
 #info #info_img {
   width: 100%;
   object-fit: cover;
+}
+
+/*********************************************** why_choose *****************************************************/
+#why_choose {
+  margin-top: 20%;
+}
+.why_choose-intro h6 {
+  font-size: 2.4vh;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 4%;
+  margin-left: 3%;
+}
+.why_choose-intro h6 span {
+  border-bottom: 1px solid var(--link-color);
+}
+.why_choose-intro p {
+  font-size: 2.2vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  line-height: 1.2;
+  margin-bottom: 4%;
+  margin-left: 3%;
+}
+
+/*********************************************** Message-Section *****************************************************/
+#message {
+  margin-top: 15%;
+}
+.message-intro {
+  margin: 3%;
+}
+.message-intro h1 {
+  font-size: 3.5vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 2%;
+  text-align: left;
+}
+.message-intro h1.splitting {
+  color: var(--title-color);
+}
+.message-intro h1.splitting .char {
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition-delay: calc(20ms * var(--char-index));
+  transition-delay: calc(20ms * var(--char-index));
+}
+.message-intro h1.splitting[data-scroll="out"] .char {
+  opacity: 0.1;
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+.message-intro h6 {
+  font-size: 2vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  line-height: 1.2;
+  margin-bottom: 3%;
+  margin-left: 3%;
+}
+.message-intro #roll {
+  width: 12%;
 }
 
 /******************************************* Footer ***************************************/
@@ -482,6 +552,11 @@ a span:hover {
 
   /* hero */
   .wrapper {
+    display: none;
+  }
+
+  /* why_choose */
+  #why_choose #circle {
     display: none;
   }
 
@@ -621,6 +696,47 @@ a span:hover {
   /* info */
   #info {
     margin-top: -6%;
+  }
+
+  /* why_choose */
+  #why_choose {
+    margin-top: 4%;
+  }
+  .why_choose-intro #circle {
+    width: 100%;
+    margin-left: -60%;
+  }
+  .why_choose-intro h6 {
+    font-size: 4vh;
+    margin-bottom: 4%;
+    margin-left: 0%;
+  }
+  .why_choose-intro p {
+    font-size: 2.5vh;
+    margin-bottom: 3%;
+    margin-left: 0%;
+  }
+
+  /* message */
+  #message {
+    margin-top: 5%;
+  }
+  .message-intro {
+    margin: 3%;
+  }
+  .message-intro h1 {
+    font-size: 7vh;
+    margin-bottom: 1%;
+    text-align: center;
+  }
+  .message-intro h6 {
+    font-size: 2.3vh;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .message-intro #roll {
+    width: 3%;
   }
 
   /* footer */
