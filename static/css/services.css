@@ -358,6 +358,59 @@ button:hover .button-text {
   line-height: 1.2;
 }
 
+/*********************************************** Image-Section *****************************************************/
+#freight_management {
+  margin-top: 10%;
+}
+#freight_management h1 {
+  font-size: 4vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--bg-color);
+  text-align: center;
+  padding-top: 25%;
+}
+
+#clearance {
+  margin-top: -4%;
+}
+#clearance h1 {
+  font-size: 4vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--bg-color);
+  padding-top: 25%;
+  text-align: center;
+}
+#clearance h1.splitting {
+  color: var(--bg-color);
+}
+#clearance h1.splitting .char {
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition-delay: calc(20ms * var(--char-index));
+  transition-delay: calc(20ms * var(--char-index));
+}
+#clearance h1.splitting[data-scroll="out"] .char {
+  opacity: 0.1;
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+#export {
+  margin-top: -4%;
+}
+#export h1 {
+  font-size: 4vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--bg-color);
+  text-align: center;
+  padding-top: 25%;
+}
+
 /*********************************************** Message-Section *****************************************************/
 #message {
   margin-top: 15%;
@@ -482,6 +535,34 @@ a span:hover {
     object-fit: cover;
   }
 
+  /* image-section */
+  #freight_management {
+    background: url("../images/freight_management.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #clearance {
+    background: url("../images/clearance_banner.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #clearance h1 {
+    text-align: center;
+  }
+  #export {
+    background: url("../images/export_banner.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+
+  /* carousel */
+  .owl-theme .owl-dots .owl-dot span {
+    display: none !important;
+  }
+
   footer p {
     margin-top: -3%;
     margin-bottom: 3%;
@@ -586,6 +667,44 @@ a span:hover {
     font-size: 2.3vh;
     margin-top: 0%;
     margin-bottom: 3%;
+  }
+
+  /* image-section */
+  #freight_management {
+    margin-top: 5%;
+    background: url("../images/freight_management.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #freight_management h1 {
+    font-size: 8vh;
+    padding-top: 5%;
+  }
+
+  #clearance {
+    margin-top: -2.5%;
+    background: url("../images/clearance_banner.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #clearance h1 {
+    font-size: 8vh;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #export {
+    margin-top: -2.5%;
+    background: url("../images/export_banner.png") 50% 50% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #export h1 {
+    font-size: 8vh;
+    padding-top: 5%;
   }
 
   /* message */
