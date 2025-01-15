@@ -10,3 +10,8 @@ def homePage(request):
 def aboutPage(request):
     context = {}
     return render(request, 'site_pages/about.html', context)
+
+
+def servicePage(request):
+    context = {}
+    return render(request, 'site_pages/services.html', context)
