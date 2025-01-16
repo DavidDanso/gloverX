@@ -59,7 +59,7 @@ tl.to("#hero", { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", duration:
 
 tl.from(".animate-this", { duration: 1, x: -30, opacity: 0, stagger: 1, delay: 0.3 });
 
-// owl-Carousel
+// owlCarousel
 $("#clients-slider").owlCarousel({
   margin: 25,
   smartSpeed: 1000,

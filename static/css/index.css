@@ -306,14 +306,14 @@ button:hover .button-text {
 }
 .wrapper .line {
   width: 80%;
-  height: 42px;
+  height: 38px;
   position: relative;
   overflow: hidden;
   margin-left: -7%;
 }
 .wrapper .line span {
   position: absolute;
-  font-size: 4.5vh;
+  font-size: 3.3vh;
   font-family: var(--main-font);
   letter-spacing: 1px;
   color: var(--text-color);
