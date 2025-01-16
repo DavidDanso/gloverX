@@ -411,6 +411,65 @@ button:hover .button-text {
   padding-top: 25%;
 }
 
+/******************************************** txt_section **************************************************/
+#txt_section {
+  margin-top: 15%;
+}
+.txt_section-intro {
+  margin: 2%;
+}
+.txt_section-intro h1 {
+  font-size: 2.8vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 5%;
+}
+.txt_section-intro h1.splitting {
+  color: var(--text-color);
+}
+.txt_section-intro h1.splitting .char {
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition-delay: calc(20ms * var(--char-index));
+  transition-delay: calc(20ms * var(--char-index));
+}
+.txt_section-intro h1.splitting[data-scroll="out"] .char {
+  opacity: 0.1;
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+/******************************************** Service **************************************************/
+.service-intro {
+  margin: 2%;
+}
+#service_line {
+  margin-top: 15%;
+}
+.service-intro h1 {
+  font-size: 2.5vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.service-intro p {
+  font-size: 2.3vh;
+  font-family: var(--text-font);
+  letter-spacing: 2px;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 5%;
+}
+#down_line {
+  margin-top: 5%;
+}
+
 /*********************************************** Message-Section *****************************************************/
 #message {
   margin-top: 15%;
@@ -705,6 +764,42 @@ a span:hover {
   #export h1 {
     font-size: 8vh;
     padding-top: 5%;
+  }
+
+  /* txt_section */
+  #txt_section {
+    margin-top: 5%;
+  }
+  .txt_section-intro {
+    margin: 2%;
+  }
+  .txt_section-intro h1 {
+    font-size: 4.5vh;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  #sec_line {
+    margin-bottom: 6%;
+  }
+
+  /* services */
+  #service .row {
+    margin-bottom: 5%;
+  }
+  .service-intro h1 {
+    font-size: 2.6vh;
+    margin-top: 0%;
+    margin-bottom: 2%;
+  }
+  .service-intro h1 span {
+    border-bottom: 1px solid var(--title-color);
+  }
+  .service-intro p {
+    font-size: 2.4vh;
+    margin-bottom: 1%;
+  }
+  #down_line {
+    margin-top: -3%;
   }
 
   /* message */
