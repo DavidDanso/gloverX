@@ -284,6 +284,76 @@ button:hover .button-text {
 }
 /*********************************************** HERO *****************************************************/
 #hero {
+  margin-top: 35%;
+}
+.hero-intro {
+  margin: 3%;
+}
+.hero-intro h1 {
+  font-size: 3.5vh;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 7%;
+  text-align: center;
+}
+.hero-intro h6 {
+  font-size: 2.1vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  margin-bottom: 2%;
+}
+.hero-intro h6 span {
+  color: var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+.hero-intro p {
+  font-size: 2.1vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 8%;
+  line-height: 1.2;
+}
+#arrow_client {
+  width: 10%;
+  margin-left: 70%;
+}
+
+/* card */
+.hero-intro .card {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 4%;
+}
+.hero-intro h2 {
+  font-size: 2.1vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: #a1a1a1;
+  margin-top: 7%;
+}
+.hero-intro h2 span {
+  border-bottom: 1px solid #a1a1a1;
+}
+.hero-intro h5 {
+  font-size: 2.1vh;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+/*********************************************** Info *****************************************************/
+#info {
+  margin-top: 10%;
+}
+#info #info_img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
 }
 
 /*********************************************** Message-Section *****************************************************/
@@ -404,6 +474,9 @@ a span:hover {
   }
 
   /* hero */
+  .hero-intro .card {
+    padding-bottom: 5%;
+  }
 
   footer p {
     margin-top: -3%;
@@ -458,7 +531,47 @@ a span:hover {
 
   /* hero */
   #hero {
-    padding-top: 12%;
+    margin-top: 10%;
+  }
+  .hero-intro {
+    margin: 3%;
+  }
+  .hero-intro h1 {
+    font-size: 5.2vh;
+    margin-bottom: 7%;
+  }
+  .hero-intro h6 {
+    font-size: 2.4vh;
+    margin-bottom: 6px;
+  }
+  .hero-intro p {
+    font-size: 2.2vh;
+    margin-bottom: 2%;
+  }
+  #arrow_client {
+    width: 3%;
+    margin-left: 70%;
+  }
+  .hero-intro .card {
+    padding-bottom: 0;
+    margin-top: 2%;
+    width: 25%;
+    margin-left: 50%;
+  }
+  .hero-intro h2 {
+    font-size: 2.1vh;
+    margin-top: 5%;
+  }
+  .hero-intro h5 {
+    font-size: 2.1vh;
+  }
+
+  /* info */
+  #info {
+    margin-top: 4%;
+  }
+  #info #info_img {
+    height: 50vh;
   }
 
   /* message */

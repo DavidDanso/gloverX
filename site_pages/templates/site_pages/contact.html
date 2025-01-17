@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="active nav-link" href="{% url 'about' %}">About Us</a>
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'services' %}">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pageTop">Contact Us</a>
+              <a class="active nav-link" href="#pageTop">Contact Us</a>
             </li>
           </ul>
           <li class="nav-item" id="track_shipment_btn">
@@ -62,25 +62,109 @@
         <!--=============================================== Hero-Section ================================-->
         <div id="hero">
           <div class="container-fluidd">
-            <div class="hero-intro"></div>
+            <div class="hero-intro">
+              <h1 class="animate-this">Contact information</h1>
+              <h6>how can we help?</h6>
+              <p>We love hearing from you. Get in touch by emailing us at Gloverj4501@gmail.com and we'll get back to within 2 business days.</p>
+
+              <h6><span>Customer Service</span></h6>
+              <p>Questions about your shippment? We've got you covered. We respond to emails M-F 9am to 6pm PST excluding holidays.</p>
+
+              <!--  -->
+              <img src="{% static 'images/arrow-clients.svg' %}" class="img-fluid animate-this" id="arrow_client" alt="arrow_client" />
+              <!--  -->
+
+              <div class="card animate-this">
+                <div class="card-body">
+                  <h2><span>general enquiries</span></h2>
+                  <h5>Gloverj4501@gmail.com</h5>
+
+                  <h2><span>socials</span></h2>
+                  <h5>X(Twitter) — gloverxshippingservices</h5>
+                  <h5>Instagram — gloverx_shipping</h5>
+
+                  <h2><span>phone number</span></h2>
+                  <h5>0555255911</h5>
+                </div>
+                <!-- end card-body -->
+              </div>
+              <!-- end card -->
+            </div>
             <!-- End hero-intro -->
           </div>
           <!-- End container-fluidd -->
         </div>
         <!-- End hero -->
 
-        <!--============================================ About-Section ================================-->
-
-        <!-- End about -->
+        <!--============================================ Info-Section ================================-->
+        <div id="info">
+          <div class="container-fluidd">
+            <div class="info-intro">
+              <img id="info_img" src="{% static 'images/contact_banner.avif' %}" class="img-fluid" alt="info_img" />
+            </div>
+            <!-- End info-intro -->
+          </div>
+          <!-- End container-fluid -->
+        </div>
+        <!-- End info -->
 
         <!--============================================ Message-Section ================================-->
-
+        <div id="message">
+          <div class="container-fluid">
+            <div class="message-intro">
+              <h1 data-splitting>Gloverx Shipping Services</h1>
+              <h6 class="animate-this">
+                <img id="roll" src="{% static 'images/line.png' %}" class="img-fluid" alt="rool_img" />
+                Delivering Smiles, One Package at a Time.
+              </h6>
+            </div>
+            <!-- End message-intro -->
+          </div>
+          <!-- End container-fluid -->
+        </div>
         <!-- End message -->
 
         <!--============================================ Footer-Section ================================-->
+        <footer>
+          <div class="container-fluid">
+            <div class="footer-intro">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row footer-content">
+                    <div class="col-md-8">
+                      <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
+                      <a href="#pageTop" class="active"><span>Contact Us</span></a>
+                      <a href="/track"><span>Track Shipment</span></a>
+                    </div>
+                    <!-- end col -->
 
-        <!-- end footer -->
+                    <div class="col-md-4 social-links align-self-center">
+                      <a href="#" aria-label="Twitter">
+                        <img src="{% static 'images/x.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
+                      </a>
+                      <a href="#" aria-label="Instagram">
+                        <img src="{% static 'images/ig.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
+                      </a>
+                    </div>
+                    <!-- end social-links -->
+                  </div>
+                  <!-- end footer-content -->
+                </div>
+                <!-- end card-body -->
+              </div>
+              <!-- end card -->
 
+              <!--  -->
+              <div class="footer-sub">
+                <p>&copy; 2025 Gloverx. All rights reserved.</p>
+              </div>
+              <!-- end footer-sub -->
+              <!--  -->
+            </div>
+            <!-- end footer-intro -->
+          </div>
+          <!-- end container -->
+        </footer>
         <!-- end footer -->
         <!--  -->
         <div class="cursor">
