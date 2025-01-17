@@ -15,3 +15,8 @@ def aboutPage(request):
 def servicePage(request):
     context = {}
     return render(request, 'site_pages/services.html', context)
+
+
+def contactPage(request):
+    context = {}
+    return render(request, 'site_pages/contact.html', context)
