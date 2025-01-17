@@ -41,12 +41,6 @@ document.querySelectorAll(".button").forEach((button) => {
   });
 });
 
-//background animation
-var tl = gsap.timeline();
-tl.to("#hero", { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", duration: 0.0, delay: 0.0 });
-
-tl.from(".animate-this", { duration: 1, x: -30, opacity: 0, stagger: 1, delay: 0.3 });
-
 //ScrollTriger
 window.addEventListener("load", function () {
   let revealText = document.querySelectorAll(".reveal-text");
