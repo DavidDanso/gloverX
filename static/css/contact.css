@@ -181,6 +181,42 @@ button:hover .button-text {
   color: #fff;
 }
 
+/*  whatsapp-container */
+.whatsapp-container {
+  position: fixed; /* This keeps it fixed while scrolling */
+  bottom: 20px; /* Distance from bottom */
+  right: 20px; /* Distance from right */
+  z-index: 9999; /* Ensures it stays on top of other elements */
+}
+
+.whatsapp-btn {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.need-help {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
 /*********************************************** NAVIGATION *****************************************************/
 #mainNav {
   transform: translateY(0);
