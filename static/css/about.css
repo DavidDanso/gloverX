@@ -804,8 +804,8 @@ a span:hover {
   .footer-sub p {
     font-size: 1.8vh;
     margin-top: 2%;
-    margin-bottom: 3%;
-    padding-bottom: 1%;
+    margin-bottom: -1%;
+    padding-bottom: 0;
   }
 }
 
