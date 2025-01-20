@@ -181,7 +181,7 @@ button:hover .button-text {
   color: #fff;
 }
 
-/*  whatsapp-container */
+/*********************************************** whatsapp-container *****************************************************/
 .whatsapp-container {
   position: fixed; /* This keeps it fixed while scrolling */
   bottom: 20px; /* Distance from bottom */
