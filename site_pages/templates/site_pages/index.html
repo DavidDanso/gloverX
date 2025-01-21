@@ -390,19 +390,22 @@
                   <div class="card">
                     <div class="card-body">
                       <p>See where your shipment is. enter your tracking number and click “Tracking Shipment”</p>
-                      <form action="">
-                        <input type="text" class="form-control input" placeholder="enter tracking number" />
-                        <button class="button alternative">track shipment</button>
-                      </form>
-                      <!-- end form -->
+                      <!--Tracking number input box.-->
+                      <input type="text" id="YQNum" class="form-control input" placeholder="Enter tracking number" required />
+                      <button type="button" class="button alternative" onclick="doTrack()">track shipment</button>
+                      <!-- end Tracking number input box.-->
                     </div>
-                    <!-- end card-body -->
+                    <!-- End card-body -->
                   </div>
-                  <!-- end card -->
+                  <!-- End card -->
                 </div>
                 <!-- end col -->
               </div>
               <!-- end row -->
+
+              <!--Container to display the tracking result-->
+              <div id="YQContainer"></div>
+              <!--end Container to display the tracking result-->
             </div>
             <!-- end tracking-intro -->
           </div>
@@ -506,5 +509,29 @@
     <script src="{% static 'js/vendor/TweenMax.min.js' %}"></script>
     <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
+
+    <!--Script code can be put in the bottom of the page, wait until the page is loaded then execute.-->
+    <script type="text/javascript" src="//www.17track.net/externalcall.js"></script>
+    <script type="text/javascript">
+      function doTrack() {
+        var num = document.getElementById("YQNum").value;
+        if (num === "") {
+          alert("Enter your number.");
+          return;
+        }
+        YQV5.trackSingle({
+          //Required, Specify the container ID of the carrier content.
+          YQ_ContainerId: "YQContainer",
+          //Optional, specify tracking result height, max height 800px, default is 560px.
+          YQ_Height: 560,
+          //Optional, select carrier, default to auto identify.
+          YQ_Fc: "0",
+          //Optional, specify UI language, default language is automatically detected based on the browser settings.
+          YQ_Lang: "en",
+          //Required, specify the number needed to be tracked.
+          YQ_Num: num,
+        });
+      }
+    </script>
   </body>
 </html>
