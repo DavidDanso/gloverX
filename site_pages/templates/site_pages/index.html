@@ -47,7 +47,7 @@
             </li>
           </ul>
           <li class="nav-item" id="track_shipment_btn">
-            <a href="#" id="track_shipment">
+            <a href="{% url 'tracking' %}" id="track_shipment">
               <button class="button alternative">Track Shipment</button>
             </a>
           </li>
@@ -389,10 +389,10 @@
                 <div class="col-md-4">
                   <div class="card">
                     <div class="card-body">
-                      <p>See where your shipment is. enter your tracking number and click “Tracking Shipment”</p>
+                      <p>See where your shipment is. enter your tracking number and click "Check Shipment"</p>
                       <!--Tracking number input box.-->
                       <input type="text" id="YQNum" class="form-control input" placeholder="Enter tracking number" required />
-                      <button type="button" class="button alternative" onclick="doTrack()">track shipment</button>
+                      <button type="button" class="button alternative" onclick="doTrack()">check shipment</button>
                       <!-- end Tracking number input box.-->
                     </div>
                     <!-- End card-body -->
@@ -439,7 +439,7 @@
                     <div class="col-md-8">
                       <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
                       <a href="{% url 'contact' %}"><span>Contact Us</span></a>
-                      <a href="/track"><span>Track Shipment</span></a>
+                      <a href="{% url 'tracking' %}"><span>Track Shipment</span></a>
                     </div>
                     <!-- end col -->
 

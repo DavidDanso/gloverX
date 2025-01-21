@@ -11,12 +11,12 @@
     <link rel="icon" href="{% static 'images/gloverx.png' %}" />
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/tracking.css' %}" />
     <link rel="stylesheet" href="{% static 'css/%20base.css' %}" />
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-    <title>Contact | Gloverx Shipping Services</title>
+    <title>Tracking | Gloverx Shipping Services</title>
   </head>
   <body data-scroll-one class="demo-1" id="pageTop">
     <!--=============================================== Navigation ================================-->
@@ -41,11 +41,11 @@
               <a class="nav-link" href="{% url 'services' %}">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="active nav-link" href="#pageTop">Contact Us</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
             </li>
           </ul>
           <li class="nav-item" id="track_shipment_btn">
-            <a href="{% url 'tracking' %}" id="track_shipment">
+            <a href="#pageTop" id="track_shipment">
               <button class="button alternative">Track Shipment</button>
             </a>
           </li>
@@ -64,32 +64,6 @@
           <div class="container-fluidd">
             <div class="hero-intro">
               <h1>Contact information</h1>
-
-              <h6>how can we help?</h6>
-              <p>We love hearing from you. Get in touch by emailing us at Gloverj4501@gmail.com and we'll get back to within 2 business days.</p>
-
-              <h6><span>Customer Service</span></h6>
-              <p>Questions about your shippment? We've got you covered. We respond to emails M-F 9am to 6pm PST excluding holidays.</p>
-
-              <!--  -->
-              <img src="{% static 'images/arrow-clients.svg' %}" class="img-fluid animate-this" id="arrow_client" alt="arrow_client" />
-              <!--  -->
-
-              <div class="card animate-this">
-                <div class="card-body">
-                  <h2><span>general enquiries</span></h2>
-                  <h5>Gloverj4501@gmail.com</h5>
-
-                  <h2><span>socials</span></h2>
-                  <h5>X(Twitter) — gloverxshippingservices</h5>
-                  <h5>Instagram — gloverx_shipping</h5>
-
-                  <h2><span>phone number</span></h2>
-                  <h5>0555255911</h5>
-                </div>
-                <!-- end card-body -->
-              </div>
-              <!-- end card -->
             </div>
             <!-- End hero-intro -->
           </div>
@@ -98,74 +72,15 @@
         <!-- End hero -->
 
         <!--============================================ Info-Section ================================-->
-        <div id="info">
-          <div class="container-fluidd">
-            <div class="info-intro">
-              <img id="info_img" src="{% static 'images/contact_banner.avif' %}" class="img-fluid" alt="info_img" />
-            </div>
-            <!-- End info-intro -->
-          </div>
-          <!-- End container-fluid -->
-        </div>
+
         <!-- End info -->
 
         <!--============================================ Message-Section ================================-->
-        <div id="message">
-          <div class="container-fluid">
-            <div class="message-intro">
-              <h1 data-splitting>Gloverx Shipping Services</h1>
-              <h6 class="animate-this">
-                <img id="roll" src="{% static 'images/line.png' %}" class="img-fluid" alt="rool_img" />
-                Delivering Smiles, One Package at a Time.
-              </h6>
-            </div>
-            <!-- End message-intro -->
-          </div>
-          <!-- End container-fluid -->
-        </div>
+
         <!-- End message -->
 
         <!--============================================ Footer-Section ================================-->
-        <footer>
-          <div class="container-fluid">
-            <div class="footer-intro">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row footer-content">
-                    <div class="col-md-8">
-                      <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
-                      <a href="#pageTop" class="active">Contact Us</a>
-                      <a href="{% url 'tracking' %}"><span>Track Shipment</span></a>
-                    </div>
-                    <!-- end col -->
 
-                    <div class="col-md-4 social-links align-self-center">
-                      <a href="https://twitter.com/gloverxshippingservices" aria-label="Twitter" target="_blank">
-                        <img src="{% static 'images/x.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
-                      </a>
-                      <a href="https://instagram.com/gloverx_shipping" aria-label="Instagram" target="_blank">
-                        <img src="{% static 'images/ig.svg' %}" id="footer_icon" class="img-fluid" alt="footer_icon" />
-                      </a>
-                    </div>
-                    <!-- end social-links -->
-                  </div>
-                  <!-- end footer-content -->
-                </div>
-                <!-- end card-body -->
-              </div>
-              <!-- end card -->
-
-              <!--  -->
-              <div class="footer-sub">
-                <p>&copy; 2025 Gloverx. All rights reserved.</p>
-              </div>
-              <!-- end footer-sub -->
-              <!--  -->
-            </div>
-            <!-- end footer-intro -->
-          </div>
-          <!-- end container -->
-        </footer>
         <!-- end footer -->
 
         <!--  -->
@@ -203,6 +118,6 @@
     <script src="{% static 'js/vendor/charming.min.js' %}"></script>
     <script src="{% static 'js/vendor/TweenMax.min.js' %}"></script>
     <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/tracking.js' %}"></script>
   </body>
 </html>

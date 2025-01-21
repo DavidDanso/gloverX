@@ -47,7 +47,7 @@
             </li>
           </ul>
           <li class="nav-item" id="track_shipment_btn">
-            <a href="#" id="track_shipment">
+            <a href="{% url 'tracking' %}" id="track_shipment">
               <button class="button alternative">Track Shipment</button>
             </a>
           </li>
@@ -273,7 +273,7 @@
                     <div class="col-md-8">
                       <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
                       <a href="{% url 'contact' %}"><span>Contact Us</span></a>
-                      <a href="/track"><span>Track Shipment</span></a>
+                      <a href="{% url 'tracking' %}"><span>Track Shipment</span></a>
                     </div>
                     <!-- end col -->
 

@@ -19,3 +19,8 @@ def servicePage(request):
 def contactPage(request):
     context = {}
     return render(request, 'site_pages/contact.html', context)
+
+
+def trackingPage(request):
+    context = {}
+    return render(request, 'site_pages/tracking.html', context)

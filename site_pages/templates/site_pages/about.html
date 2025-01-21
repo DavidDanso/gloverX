@@ -41,11 +41,11 @@
               <a class="nav-link" href="{% url 'services' %}">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
             </li>
           </ul>
           <li class="nav-item" id="track_shipment_btn">
-            <a href="#" id="track_shipment">
+            <a href="{% url 'tracking' %}" id="track_shipment">
               <button class="button alternative">Track Shipment</button>
             </a>
           </li>
@@ -242,8 +242,8 @@
                   <div class="row footer-content">
                     <div class="col-md-8">
                       <img src="{% static 'images/gloverx.png' %}" class="img-fluid" id="footer_logo" alt="footer_logo" />
-                      <a href="/contact"><span>Contact Us</span></a>
-                      <a href="/track"><span>Track Shipment</span></a>
+                      <a href="{% url 'contact' %}"><span>Contact Us</span></a>
+                      <a href="{% url 'tracking' %}"><span>Track Shipment</span></a>
                     </div>
                     <!-- end col -->
 
