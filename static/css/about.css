@@ -733,6 +733,11 @@ a span:hover {
   #info {
     margin-top: -6%;
   }
+  #info_img {
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+  }
 
   /* why_choose */
   #why_choose {

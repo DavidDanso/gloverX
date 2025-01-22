@@ -272,7 +272,7 @@ button:hover .button-text {
 .nav-item a {
   padding: 5px 15px !important;
   font-size: 14px;
-  color: var(--text-color);
+  color: var(--bg-color);
   letter-spacing: 1px;
   font-family: var(--text-font);
   transition: all 0.5s ease-in-out;
@@ -296,6 +296,9 @@ button:hover .button-text {
   animation-fill-mode: both;
   width: 100%;
   border-bottom: 1px solid var(--line-color);
+}
+#mainNav.navbar-shrink a {
+  color: var(--text-color);
 }
 @keyframes animationFade {
   from {
@@ -768,6 +771,9 @@ a span:hover {
   .navbar-brand img {
     width: 65px;
     margin-top: -20%;
+  }
+  .nav-item a {
+    color: var(--text-color);
   }
   #track_shipment {
     margin-bottom: 3px;
