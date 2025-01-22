@@ -630,7 +630,7 @@ a span:hover {
     width: 35%;
     object-fit: contain;
     margin-top: 15px;
-    float: right;
+    margin-left: 60%;
   }
 
   /* message */
