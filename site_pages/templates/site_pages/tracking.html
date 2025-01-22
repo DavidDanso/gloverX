@@ -65,6 +65,24 @@
             <div class="hero-intro">
               <h1>Track Your Package, Stay Updated Every Step of the Way</h1>
               <p>Easily monitor the progress of your package with our reliable tracking system, <span></span> ensuring you stay informed every step of the way.</p>
+
+              <!--Tracking number input box.-->
+              <h2>track your shipment</h2>
+              <div class="input-group">
+                <input type="text" id="YQNum" class="form-control input" placeholder="Enter tracking number" required />
+                <button type="button" class="image-button" onclick="doTrack()">
+                  <img src="{% static 'images/right-arrow.png' %}" class="button-icon" alt="Track Button" />
+                </button>
+              </div>
+              <!-- end Tracking number input box.-->
+
+              <!--Container to display the tracking result-->
+              <div id="YQContainer"></div>
+              <!--end Container to display the tracking result-->
+
+              <!--  -->
+              <img src="{% static 'images/sub_banner.avif' %}" class="img-fluid" id="sub_banner" alt="sub_banner" />
+              <!--  -->
             </div>
             <!-- End hero-intro -->
           </div>
@@ -120,5 +138,27 @@
     <script src="{% static 'js/vendor/TweenMax.min.js' %}"></script>
     <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
     <script src="{% static 'js/tracking.js' %}"></script>
+    <script type="text/javascript" src="//www.17track.net/externalcall.js"></script>
+    <script type="text/javascript">
+      function doTrack() {
+        var num = document.getElementById("YQNum").value;
+        if (num === "") {
+          alert("Enter your number.");
+          return;
+        }
+        YQV5.trackSingle({
+          //Required, Specify the container ID of the carrier content.
+          YQ_ContainerId: "YQContainer",
+          //Optional, specify tracking result height, max height 800px, default is 560px.
+          YQ_Height: 560,
+          //Optional, select carrier, default to auto identify.
+          YQ_Fc: "0",
+          //Optional, specify UI language, default language is automatically detected based on the browser settings.
+          YQ_Lang: "en",
+          //Required, specify the number needed to be tracked.
+          YQ_Num: num,
+        });
+      }
+    </script>
   </body>
 </html>
