@@ -34,13 +34,10 @@ else:
     DEBUG = False
 
 # 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['gloverx.onrender.com']
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -137,15 +134,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media' 
 
 #
-if ENVIRONMENT == 'production':
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    CLOUDINARY_STORAGE = {
-        'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
-        'API_KEY': config('CLOUDINARY_API_KEY'),
-        'API_SECRET': config('CLOUDINARY_API_SECRET')
-    }
-else:
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -153,5 +142,5 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOWED_ORIGINS = ['https://swift-bill-invoice.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://swift-bill-invoice.onrender.com']
+CORS_ALLOWED_ORIGINS = ['https://gloverx.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://gloverx.onrender.com']
