@@ -34,7 +34,7 @@ else:
     DEBUG = False
 
 # 
-ALLOWED_HOSTS = ['gloverx.onrender.com']
+ALLOWED_HOSTS = ['gloverx.onrender.com', '127.0.0.1']
 
 
 # Application definition

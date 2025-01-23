@@ -1,0 +1,211 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Graphik-Regular";
+  src: url("../fonts/Graphik-Regular.woff2");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "GTAmericaLight";
+  src: url("../fonts/GTAmericaLight.woff2");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "MaelstromSansTest-Bold";
+  src: url("../fonts/MaelstromSansTest-Bold.woff2");
+}
+.demo-1 {
+  --bg-color: #fafafa;
+  --line-color: #d3d4d4;
+  --title-color: #009cea;
+  --link-color: #ff6d00;
+  --text-color: #1f1f1f;
+  --nav-links: #009cea;
+  --nav-hover: #ff6d00;
+  --paragraph-color: #f2f2f2;
+  --cursor-color: #3a363a;
+  --main-font: "Graphik-Regular";
+  --text-font: "GTAmericaLight";
+  --number-font: "MaelstromSansTest-Bold";
+  --aspect-ratio: 32/17;
+  --img-maxwidth: 250px;
+  --blendmode-title: difference;
+}
+.button.alternative {
+  --color-hover: #ff6d00;
+  --background: #ff6d00;
+  --hover-back: #ff6d00;
+  --hover-front: #f6f8ff;
+  --color: #fff;
+  --text-font: "GTAmericaLight";
+}
+.button {
+  --color-hover: var(--color);
+  font-family: var(--text-font);
+  padding: 7px 25px;
+  border-radius: 40px;
+  line-height: 24px;
+  font-size: 1.7vh;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  color: var(--c, var(--color));
+  background: var(--b, var(--background));
+  -webkit-transition: color 0.2s linear var(--c-d, 0.2s), background 0.3s linear var(--b-d, 0.2s);
+  transition: color 0.2s linear var(--c-d, 0.2s), background 0.3s linear var(--b-d, 0.2s);
+  margin-left: -2%;
+  margin-top: 2%;
+}
+.button:not(.simple):before,
+.button:not(.simple):after {
+  content: "";
+  position: absolute;
+  background: var(--pb, var(--hover-back));
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  border-radius: var(--br, 40%);
+  -webkit-transform: translateY(var(--y, 50%));
+  transform: translateY(var(--y, 50%));
+  -webkit-transition: border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+  transition: border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+  transition: transform var(--d, 0.4s) ease-in var(--d-d, 0s), border-radius 0.5s ease var(--br-d, 0.08s);
+  transition: transform var(--d, 0.4s) ease-in var(--d-d, 0s), border-radius 0.5s ease var(--br-d, 0.08s), -webkit-transform var(--d, 0.4s) ease-in var(--d-d, 0s);
+}
+.button:not(.simple):after {
+  --pb: var(--hover-front);
+  --d: 0.44s;
+}
+.button div {
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+}
+.button div span {
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: var(--name, none) 0.7s linear forwards 0.18s;
+  animation: var(--name, none) 0.7s linear forwards 0.18s;
+}
+.button.in {
+  --name: move;
+}
+.button.in:not(.out) {
+  --c: var(--color-hover);
+  --b: var(--background-hover);
+}
+.button.in:not(.out):before,
+.button.in:not(.out):after {
+  --y: 0;
+  --br: 5%;
+}
+.button.in:not(.out):after {
+  --br: 10%;
+  --d-d: 0.02s;
+}
+.button.in.out {
+  --name: move-out;
+}
+.button.in.out:before {
+  --d-d: 0.06s;
+}
+
+@-webkit-keyframes move {
+  30%,
+  36% {
+    -webkit-transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+    -webkit-transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+    -webkit-transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+  }
+}
+
+@keyframes move {
+  30%,
+  36% {
+    -webkit-transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+    -webkit-transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+    -webkit-transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+  }
+}
+@-webkit-keyframes move-out {
+  30%,
+  36% {
+    -webkit-transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+    -webkit-transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+    -webkit-transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+  }
+}
+@keyframes move-out {
+  30%,
+  36% {
+    -webkit-transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+    -webkit-transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+    -webkit-transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+    transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+  }
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) {
+  #contact-msg .button {
+    margin-left: 2%;
+  }
+}
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+  .button {
+    margin-top: -3%;
+    margin-left: 0%;
+    padding: 0.8em 2.75em;
+    font-size: 1.8vh;
+  }
+  #mainNav.navbar-shrink .button {
+    border: 1px solid var(--link-color);
+  }
+  #contact-msg .button {
+    text-transform: none;
+    font-size: 2.2vh;
+    font-family: var(--text-font);
+  }
+}
