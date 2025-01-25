@@ -76,6 +76,10 @@
               </div>
               <!-- end Tracking number input box.-->
 
+              <!--Container to display the tracking result-->
+              <div id="YQContainer"></div>
+              <!--end Container to display the tracking result-->
+
               <!--  -->
               <img src="{% static 'images/sub_banner.avif' %}" class="img-fluid" id="sub_banner" alt="sub_banner" />
               <!--  -->
@@ -189,11 +193,9 @@
           alert("Enter your number.");
           return;
         }
-        YQV5.trackSingleF2({
-          //Required, Specify the element ID of the floating position.
-          YQ_ElementId: "YQNum",
-          //Optional, specify the tracking result width, min width 260px, default is 470px.
-          YQ_Width: 770,
+        YQV5.trackSingle({
+          //Required, Specify the container ID of the carrier content.
+          YQ_ContainerId: "YQContainer",
           //Optional, specify tracking result height, max height 800px, default is 560px.
           YQ_Height: 560,
           //Optional, select carrier, default to auto identify.
