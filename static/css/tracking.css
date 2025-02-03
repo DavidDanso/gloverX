@@ -341,73 +341,69 @@ button:hover .button-text {
   text-align: center;
   line-height: 1.2;
 }
-.hero-intro h2 {
-  font-size: 2.2vh;
-  font-family: var(--main-font);
-  letter-spacing: 1px;
-  color: var(--title-color);
-  margin-top: 18%;
-}
 
 /* Container for the input and button */
-.input-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.hero-intro .input {
-  color: var(--text-color);
-  letter-spacing: 1px;
-  font-family: var(--text-font);
-  font-size: 2vh;
-  border: none;
-  background: #a1a1a149;
-  flex: 1;
-}
-.hero-intro .input:focus {
-  box-shadow: none !important;
-  outline: 0px !important;
-  border: none;
-  color: var(--text-color);
-  background: #a1a1a149;
-}
-.hero-intro .input::placeholder {
-  letter-spacing: 1px;
-  font-family: var(--text-font);
-  font-size: 1.7vh;
-  color: #a1a1a1;
+/* .input-group { */
+/* display: flex; */
+/* align-items: center; */
+/* gap: 10px; */
+/* } */
+/* .hero-intro .input { */
+/* color: var(--text-color); */
+/* letter-spacing: 1px; */
+/* font-family: var(--text-font); */
+/* font-size: 2vh; */
+/* border: none; */
+/* background: #a1a1a149; */
+/* flex: 1; */
+/* } */
+/* .hero-intro .input:focus { */
+/* box-shadow: none !important; */
+/* outline: 0px !important; */
+/* border: none; */
+/* color: var(--text-color); */
+/* background: #a1a1a149; */
+/* } */
+/* .hero-intro .input::placeholder { */
+/* letter-spacing: 1px; */
+/* font-family: var(--text-font); */
+/* font-size: 1.7vh; */
+/* color: #a1a1a1; */
+/* } */
+
+.track123-widget-wrapper {
+  border: 1px solid #ff6f00f4;
+  margin-top: 2%;
 }
 /* Style for the button */
-.image-button {
-  background: #ff6d00;
+#trackButton {
+  background: #ff6f00f4;
   border: none;
-  padding: 3px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 25px;
+  color: var(--bg-color);
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-size: 1.8vh;
+  margin-top: 14%;
+  transition: transform 0.2s ease-in-out;
 }
-.image-button .button-icon {
+#rfid_img {
   width: 30px;
   height: 30px;
   padding: 2px;
-}
-.image-button:hover .button-icon {
-  transform: scale(1.1);
+  vertical-align: middle;
   transition: transform 0.2s ease-in-out;
 }
-
-/*  */
-#YQContainer {
-  margin-top: 3%;
+#trackButton:hover #rfid_img {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 /*  sub_banner.avif */
 #sub_banner {
   width: 100%;
   height: auto;
-  margin-top: 5px;
+  margin-top: 7px;
   border-radius: 5px;
 }
 
@@ -603,35 +599,21 @@ a span:hover {
   .hero-intro p span {
     display: block;
   }
-  .hero-intro h2 {
-    font-size: 2.2vh;
-    margin-top: 8%;
-  }
 
   /* Container for the input and button */
-  .input-group {
-    gap: 10px;
-    width: 30%;
+  .track123-widget-wrapper {
+    margin-top: 1%;
   }
-  .hero-intro .input {
-    font-size: 2.1vh;
-  }
-  .hero-intro .input::placeholder {
+  #trackButton {
+    padding: 0px;
+    border-radius: 25px;
+    margin-top: 6%;
+    padding: 4px 14px;
     font-size: 1.8vh;
   }
-  .image-button {
-    padding: 3px;
-    border-radius: 25px;
-  }
-  .image-button .button-icon {
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-  }
-
-  /*  */
-  #YQContainer {
-    margin-top: 10px;
+  #trackButton #rfid_img {
+    width: 35px;
+    height: 35px;
   }
 
   /*  sub_banner.avif */

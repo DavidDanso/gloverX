@@ -67,8 +67,11 @@
               <p>Easily monitor the progress of your package with our reliable tracking system, <span></span> ensuring you stay informed every step of the way.</p>
 
               <!-- Tracking number input box -->
-              <h2>track your shipment</h2>
-              <button id="trackButton" onclick="doTrack()">Track Now</button>
+              <button type="button" class="btn" id="trackButton" onclick="doTrack()">
+                <img src="{% static 'images/rfid.png' %}" class="img-fluid" id="rfid_img" alt="rfid_img" />
+                Track Item
+              </button>
+
               <div id="track123-tracking-widget"></div>
               <!-- end Tracking number input box -->
               <!--  -->
@@ -178,28 +181,80 @@
     <script src="{% static 'js/tracking.js' %}"></script>
 
     <script type="text/javascript">
-      function doTrack() {
-        var btn = document.getElementById("trackButton");
-        btn.disabled = true;
-        btn.innerText = "Loading...";
-        document.getElementById("track123-tracking-widget").innerHTML = "";
-        var oldScript = document.querySelector('script[src="https://www.track123.com/track123-widget.min.js"]');
+      function loadTrack123Widget(callback, errorCallback) {
+        const oldScript = document.querySelector('script[src="https://www.track123.com/track123-widget.min.js"]');
         if (oldScript) oldScript.remove();
+
+        const script = document.createElement("script");
+        script.src = "https://www.track123.com/track123-widget.min.js";
+
+        script.onload = function () {
+          if (callback) callback();
+        };
+
+        script.onerror = function () {
+          console.error("Failed to load Track123 widget");
+          if (errorCallback) errorCallback();
+        };
+
+        document.body.appendChild(script);
+      }
+
+      function checkWidgetLoaded(callback, errorCallback) {
+        let attempts = 0;
+        const maxAttempts = 10;
+
+        const interval = setInterval(function () {
+          const widgetContainer = document.getElementById("track123-tracking-widget");
+
+          if (widgetContainer && widgetContainer.querySelector("iframe")) {
+            clearInterval(interval);
+            if (callback) callback();
+          } else if (++attempts >= maxAttempts) {
+            clearInterval(interval);
+            console.error("Widget loading timed out");
+            if (errorCallback) errorCallback();
+          }
+        }, 500);
+      }
+
+      function doTrack() {
+        const btn = document.getElementById("trackButton");
+        const originalHTML = '<img src="{% static "images/rfid.png" %}" class="img-fluid" id="rfid_img" alt="rfid_img" /> Track Item';
+
+        btn.disabled = true;
+        btn.innerHTML = "Loading...";
+        document.getElementById("track123-tracking-widget").innerHTML = "";
+
         window.track123WidgetConfig = {
           api_base: "https://www.track123.com",
           provider_type: 3,
           language: "en_US",
-          theme_color: "#5B62FF",
+          theme_color: "#ff6f00f4",
           width_type: "auto",
           width_value: "",
         };
-        var script = document.createElement("script");
-        script.src = "https://www.track123.com/track123-widget.min.js";
-        script.onload = function () {
-          btn.disabled = false;
-          btn.innerText = "Track Now";
-        };
-        document.body.appendChild(script);
+
+        loadTrack123Widget(
+          function () {
+            checkWidgetLoaded(
+              function () {
+                btn.disabled = false;
+                btn.innerHTML = originalHTML;
+              },
+              function () {
+                btn.disabled = false;
+                btn.innerHTML = originalHTML;
+                alert("Failed to load tracking widget");
+              }
+            );
+          },
+          function () {
+            btn.disabled = false;
+            btn.innerHTML = originalHTML;
+            alert("Failed to load tracking script");
+          }
+        );
       }
     </script>
   </body>
