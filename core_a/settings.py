@@ -27,6 +27,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 ENVIRONMENT=config('ENVIRONMENT')
 
+AFTERSHIP_API_KEY=config('AFTERSHIP_API_KEY')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 if ENVIRONMENT == 'development':
     DEBUG = True
