@@ -34,7 +34,7 @@ else:
     DEBUG = False
 
 # 
-ALLOWED_HOSTS = ['gloverx.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['gloverx.onrender.com', '127.0.0.1', 'gloverxshipping.com']
 
 
 # Application definition
@@ -142,5 +142,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOWED_ORIGINS = ['https://gloverx.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://gloverx.onrender.com']
+CORS_ALLOWED_ORIGINS = ['https://gloverxshipping.com']
+CSRF_TRUSTED_ORIGINS = ['https://gloverxshipping.com']
