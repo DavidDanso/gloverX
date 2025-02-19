@@ -6,13 +6,50 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <title>{{ page_title }}</title>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Fast and reliable shipping services worldwide. Professional imports, exports, and customs clearing made easy with Gloverx Shipping Services. Track your shipments online." />
-    <meta name="keywords" content="shipping services, cargo shipping, international shipping, customs clearing, import export, logistics services, freight forwarding, Gloverx Shipping" />
+    <meta name="description" content="{{ meta_description }}" />
+    <meta name="keywords" content="shipping Ghana, cargo services Ghana, customs clearing, international shipping, freight forwarding, import export Ghana, logistics company Ghana, shipping company Accra, express delivery Ghana, worldwide shipping Ghana" />
     <meta name="author" content="the_desiinger" />
 
-    <!-- Google Site Verification -->
-    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_FROM_GOOGLE" />
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gloverxshipping.com{{ request.path }}" />
+    <meta property="og:image" content="{% static 'images/gloverx.png' %}" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page_title }}" />
+    <meta name="twitter:description" content="{{ meta_description }}" />
+    <meta name="twitter:image" content="{% static 'images/gloverx.png' %}" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gloverxshipping.com{{ request.path }}" />
+
+    <!-- Add Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ShippingCompany",
+        "name": "Gloverx Shipping",
+        "description": "Professional shipping and customs clearing services in Ghana",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Ghana",
+          "addressLocality": "Accra"
+        },
+        "url": "https://gloverxshipping.com",
+        "telephone": "0555255911",
+        "email": "Gloverj4501@gmail.com",
+        "sameAs": ["https://twitter.com/gloverxshipping", "https://instagram.com/gloverx_shipping"],
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "₵₵",
+        "image": "{% static 'images/gloverx.png' %}"
+      }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" href="{% static 'images/gloverx.png' %}" />
@@ -26,7 +63,6 @@
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-    <title>Gloverx Shipping Services - Professional International Shipping & Logistics</title>
   </head>
   <body data-scroll-one class="demo-1" id="pageTop">
     <!--=============================================== Navigation ================================-->
