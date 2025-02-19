@@ -15,14 +15,32 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, reverse
 from django.conf import settings
 from django.conf.urls.static import static
 from site_pages.views import *
+from django.contrib.sitemaps import Sitemap
+from django.contrib.sitemaps.views import sitemap
+from django.http import HttpResponse
+
+def robots_txt(request):
+    return HttpResponse("User-agent: *\nAllow: /", content_type="text/plain")
+
+class BasicSitemap(Sitemap):
+    changefreq = "weekly"
+    priority = 0.8
+    def items(self):
+        return ['home', 'about', 'services', 'contact', 'tracking']
+    def location(self, item):
+        return reverse(item)
+
+sitemaps = {'basic': BasicSitemap}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homePage, name='home'),
+    path('robots.txt', robots_txt),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path('about', aboutPage, name='about'),
     path('services', servicePage, name='services'),
     path('contact', contactPage, name='contact'),
