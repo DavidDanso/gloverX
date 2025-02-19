@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'site_pages',
+
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
